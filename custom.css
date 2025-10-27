@@ -1,0 +1,135 @@
+/* custom.css */
+
+/* Definición de la paleta de colores y las fuentes */
+:root {
+  --primary-color: #0A2540; /* Azul oscuro y profesional */
+  --secondary-color: #00D4B3; /* Turquesa vibrante para acentos */
+  --text-color: #333; /* Gris oscuro para el texto principal */
+  --light-gray: #f8f9fa; /* Gris claro para fondos */
+  --white: #ffffff; /* Blanco */
+  --font-primary: 'Poppins', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+}
+
+/* Estilos generales del cuerpo */
+body {
+  font-family: var(--font-secondary);
+  color: var(--text-color);
+  background-color: var(--white);
+}
+
+/* Estilos para los encabezados */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+/* Ajustes de espaciado y layout */
+.section-padding {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 0;
+  color: var(--white);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-weight: 700;
+  color: var(--white);
+}
+
+/* Estilos para los botones */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--primary-color);
+  font-weight: 600;
+  padding: 12px 30px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  color: var(--primary-color);
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+  background-color: var(--primary-color) !important;
+  padding: 20px 0;
+}
+
+/* Estilos para las tarjetas */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card svg {
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 60px 0;
+}
+
+footer h5 {
+  color: var(--white);
+}
+
+footer a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animaciones */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: none;
+}
